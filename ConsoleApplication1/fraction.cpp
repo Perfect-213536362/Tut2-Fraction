@@ -22,7 +22,7 @@ public:
 		denom = denominator;
 	}
 	fraction::~fraction();
-	fraction fraction::getFrac() //Method for obtaining the fraction from the user..
+	fraction getFrac() //Method for obtaining the fraction from the user..
 	{
 		int num, denom;
 		cout << "Number entry\n\n";
