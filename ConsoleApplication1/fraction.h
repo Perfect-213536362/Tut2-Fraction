@@ -1,18 +1,25 @@
 #pragma once
+
+#ifndef fraction_H
+#define fraction_H
+
+
+
 class fraction
 {
 private:
 	int num;
-	int denom;
-
+	int den;
+	char dummychar; //A variable to hold the “/” character
 public:
-	fraction();
+	fraction(int numerator = 0, int denominator = 1);
 	~fraction();
-
-	fraction::fraction();
-	fraction::~fraction();
-	fraction fraction::addFraction(fraction add);
-	fraction fraction::subFraction(fraction sub);
-	fraction fraction::multFraction(fraction mult);
-	fraction fraction::divFraction(fraction div);
+	fraction getFrac();
+	fraction addFraction(fraction add);
+	fraction subFraction(fraction sub);
+	fraction multFraction(fraction mult);
+	fraction divFraction(fraction div);
+	void print();
 };
+
+#endif
