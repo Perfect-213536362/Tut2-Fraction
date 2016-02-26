@@ -1,4 +1,4 @@
-#pragma once
+
 
 #ifndef fraction_H
 #define fraction_H

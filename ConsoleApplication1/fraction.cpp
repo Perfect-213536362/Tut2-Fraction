@@ -13,7 +13,7 @@ class fraction
 private:
 	int num;
 	int denom;
-
+	char dummychar;
 
 public:
 	fraction::fraction(int numerator, int denominator)
@@ -22,7 +22,8 @@ public:
 		denom = denominator;
 	}
 	fraction::~fraction();
-	fraction getFrac() //Method for obtaining the fraction from the user..
+
+    fraction getFrac( int , int ) //Method for obtaining the fraction from the user..
 	{
 		int num, denom;
 		cout << "Number entry\n\n";
@@ -30,7 +31,7 @@ public:
 		cin >> num;
 		cout << "Enter the denominator:";
 		cin >> denom;
-		return fraction(num, denom);
+	
 	}
 
 	fraction fraction::addFraction(fraction add)
