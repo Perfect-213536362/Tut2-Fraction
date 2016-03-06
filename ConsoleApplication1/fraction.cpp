@@ -78,5 +78,32 @@ public:
 			cout << "The result is" << num << "/" << denom << endl;
 
 	}
+
+	fraction fraction::operator+(fraction add) //the operator which impliment addition as a member of function
+	{
+		add.num = (num * add.denom) + (denom * add.num);
+		add.denom = (denom * add.denom);
+		return add;
+	}
+	fraction fraction::operator-(fraction sub) //the operator which impliments subrection as a member of function
+	{
+		sub.num = (num * sub.denom) - (denom * sub.num);
+		sub.denom = (denom * sub.denom);
+		return sub;
+	}
+	fraction fraction::operator*(fraction mul) //the operator which impliment multiplication as a member of function
+	{
+		mul.num = (num * mul.num);
+		mul.denom = (denom * mul.denom);
+		return mul;
+	}
+	fraction fraction::operator/(fraction div) //the operator which impliment division as a member of function
+	{
+		div.num = (num * div.denom);
+		div.denom = (denom * div.num);
+		return div;
+	}
+
 };
+
 #endif

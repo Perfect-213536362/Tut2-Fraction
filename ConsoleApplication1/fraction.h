@@ -19,6 +19,12 @@ public:
 	fraction subFraction(fraction sub);
 	fraction multFraction(fraction mult);
 	fraction divFraction(fraction div);
+
+	fraction operator+(fraction add);
+	fraction operator-(fraction sub);
+	fraction operator*(fraction mul);
+	fraction operator/(fraction div);
+
 	void print();
 };
 
